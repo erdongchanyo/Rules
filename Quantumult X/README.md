@@ -1,4 +1,4 @@
-#Quantumult X 小白系列教程
+# Quantumult X 小白系列教程
 
 
 
@@ -36,17 +36,17 @@ telegram群：https://t.me/erdongchan
 
 ---
 
-##一、Quantumult X小白系列教程｜导入订阅链接、添加自己搭建的节点，开始使用
+## 一、Quantumult X小白系列教程｜导入订阅链接、添加自己搭建的节点，开始使用
 
 ❗️**`视频教程地址：`**https://youtu.be/Ub9RN-7Q94s
 
-###1. 关于节点
+### 1. 关于节点
 
 - 导入 `自己搭建的节点` 或者 `节点(机场)订阅链接` 
 - 支持协议：ss / ssr / trojan / vmess / http(s)
 - 配置文件中对应的模块：**`[server local]` / `[server remote]`**
 
-###2. 首先，给你的Quantumult X增加一个小工具：资源解析器
+### 2. 首先，给你的Quantumult X增加一个小工具：资源解析器
 
 `适用于 Quantumult X (v1.0.8-build253) 版本后`
 
@@ -70,13 +70,13 @@ telegram群：https://t.me/erdongchan
 >   resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 >   ```
 
-###3. 添加节点和订阅链接
+### 3. 添加节点和订阅链接
 
-####a. 通过Quantumult X UI界面 (用户界面) 进行添加节点
+#### a. 通过Quantumult X UI界面 (用户界面) 进行添加节点
 
 > `设置` > `节点`
 
-#####a.1 通过 `添加` / `SS URI` / `扫码` 添加节点
+##### a.1 通过 `添加` / `SS URI` / `扫码` 添加节点
 
 > ⚠️ 一次只能添加一个节点
 >
@@ -94,7 +94,7 @@ telegram群：https://t.me/erdongchan
 >
 > - `扫码`：支持 ss / ssr 以及 `Quantumult X 格式的` trojan / vmess /http(s) 节点二维码
 
-#####a.2 通过 `引用(订阅)` 添加节点
+##### a.2 通过 `引用(订阅)` 添加节点
 
 > ⚠️ 默认支持 ss / ssr 订阅链接，后续不对 ss / ssr 订阅链接做演示
 >
@@ -164,7 +164,7 @@ telegram群：https://t.me/erdongchan
 >   >   >
 >   >   > 输出类型请选择  `节点订阅` 
 
-####b. 通过手动修改配置文件进行添加节点
+#### b. 通过手动修改配置文件进行添加节点
 
 > `设置` > `配置文件` > `编辑`
 >
@@ -214,18 +214,18 @@ telegram群：https://t.me/erdongchan
 
 
 
-##二、Quantumult X小白系列教程｜基础使用：认识策略组和分流规则，利用大佬们的策略组和分流规则，实现自动分流，让 Quantumult X 更加智能
+## 二、Quantumult X小白系列教程｜基础使用：认识策略组和分流规则，利用大佬们的策略组和分流规则，实现自动分流，让 Quantumult X 更加智能
 
 ❗️**`视频教程地址：`**https://youtu.be/wNwpnxmTAJ8
 
-###1. 策略组
+### 1. 策略组
 
 - 策略组 包含 若干节点，也可包含 子策略(组)
 - 策略组 服务于 分流规则
 - 不同策略组可根据用户个人习惯进行先后排序
 - 配置文件中对应的模块：**`[proxy]`**
 
-####a. Quantumult X 内置的 4 种策略组
+#### a. Quantumult X 内置的 4 种策略组
 
 > **static** / 静态策略组 (常用)
 >
@@ -235,7 +235,7 @@ telegram群：https://t.me/erdongchan
 >
 > SSID / 服务集策略 (略)
 
-####b. Quantumult X 内置的 3 种策略
+#### b. Quantumult X 内置的 3 种策略
 
 > **Proxy** / 代理
 >
@@ -243,7 +243,7 @@ telegram群：https://t.me/erdongchan
 >
 > **Reject** / 拒绝
 
-####c. 添加策略组(举例说明)
+#### c. 添加策略组(举例说明)
 
 > - ```
 >   static=GMedia, Outside, proxy, direct, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/GMedia.png
@@ -283,7 +283,7 @@ telegram群：https://t.me/erdongchan
 
 
 
-###2. 分流规则
+### 2. 分流规则
 
 - 分流规则 是一个list文件
 
@@ -297,7 +297,7 @@ telegram群：https://t.me/erdongchan
   
 - 配置文件中对应的模块：**`[filter_remote]`/`[filter_local]`**
 
-####a. 分流规则工作原理
+#### a. 分流规则工作原理
 
 > list 文件内包含若干如下的域名列表：
 >
@@ -317,11 +317,11 @@ telegram群：https://t.me/erdongchan
 >
 > 如果发起的**网络访问 命中**了**分流规则**列表中包含的域名，那么**访问请求**将会被**分发至**这条规则指定的**策略组**。访问成功与否取决于策略组
 
-####b. 添加分流规则
+#### b. 添加分流规则
 
-#####b.1 **添加** `[filter_remote]` 远程分流规则订阅
+##### b.1 **添加** `[filter_remote]` 远程分流规则订阅
 
-######a. 在软件界面(UI)中直接添加分流规则
+###### a. 在软件界面(UI)中直接添加分流规则
 
 > 一次添加一条
 >
@@ -332,7 +332,7 @@ telegram群：https://t.me/erdongchan
 > ```
 >
 
-######b. 通过修改配置文件添加分流规则
+###### b. 通过修改配置文件添加分流规则
 
 > 一次可添加多条
 >
@@ -348,9 +348,9 @@ telegram群：https://t.me/erdongchan
 >
 > enabled=：是否启用该分流规则，true/启用、false/停用
 
-#####b.2 **添加** `[filter_local]` 本地分流配置片段
+##### b.2 **添加** `[filter_local]` 本地分流配置片段
 
-######a. 通过 `iCloud` / `本地(我的iPhone)` 下的 `分流配置片段` 导入分流规则
+###### a. 通过 `iCloud` / `本地(我的iPhone)` 下的 `分流配置片段` 导入分流规则
 
 > 参考第一期教程：
 >
@@ -360,7 +360,7 @@ telegram群：https://t.me/erdongchan
 >
 > 反正我是小白，不会自己写分流规则，所以这里，略过
 
-######b. 通过修改配置文件添加
+###### b. 通过修改配置文件添加
 
 > `Quantumult X 设置` > `配置文件` > `编辑` > `[filter_local]` 模块
 >
@@ -384,15 +384,15 @@ telegram群：https://t.me/erdongchan
 
 **如果 远程分流 和 本地分流 遇到相同规则，本地规则优先生效**
 
-###3. 为分流规则指定策略组
+### 3. 为分流规则指定策略组
 
-####a. 手动为分流规则指定策略组(推荐)
+#### a. 手动为分流规则指定策略组(推荐)
 
 > `Quantumult X 设置` > `分流` > `引用` - 选中规则左滑 - `编辑` - 打开 `策略偏好`
 >
 > 在弹出的选项中，选择对应的策略组
 
-####b. 使用`force-policy`强制指定策略组
+#### b. 使用`force-policy`强制指定策略组
 
 > 举例：使用 force-policy 强制让 [GMedia 规则] 分流规则使用 [GMedia] 策略偏好
 >
@@ -404,7 +404,7 @@ telegram群：https://t.me/erdongchan
 > - 如果不存在 [GMedia] 策略组，则 `force-policy` 将强制自动生成一个只包含`direct`/直连 和 `reject`/拒绝 两个内置策略的 [GMedia] 策略组。
 > - 在App首页长按该策略组图标，可以将已经导入的节点和二级策略组添加到该策略组下
 
-###4. 开始使用分流规则和策略组
+### 4. 开始使用分流规则和策略组
 
 - 在了解了策略组和分流规则后，我们就可以自己写策略组了，不过光有策略组没有分流规则等于啥都没有；
 
@@ -450,19 +450,19 @@ telegram群：https://t.me/erdongchan
 
 
 
-##三、Quantumult X小白系列教程｜基础实战：创建网易云音乐解锁服务器节点策略组，利用分流规则，轻松解锁网易云音乐Netecase Music灰色(无版权)音乐
+## 三、Quantumult X小白系列教程｜基础实战：创建网易云音乐解锁服务器节点策略组，利用分流规则，轻松解锁网易云音乐Netecase Music灰色(无版权)音乐
 
 ❗️**`视频教程地址：`**https://youtu.be/_XmUmRrizwg
 
-###1. 解锁网易云灰色音乐大致原理
+### 1. 解锁网易云灰色音乐大致原理
 
 - 利用QQ、酷我音乐等音乐平台的资源链接替换网易云灰色歌曲链接
 - 有条件的盆友可以自己搭建解锁服务器
 - 教程中用到的免费服务器均为网络收集，限制仅允许网易云音乐相关域名与 IP 通过代理，其余代理请求一律丢弃。
 
-###2. 下载、安装、信任证书
+### 2. 下载、安装、信任证书
 
-####a. 下载证书
+#### a. 下载证书
 
 > Safari浏览器点击链接：https://raw.githubusercontent.com/nondanee/UnblockNeteaseMusic/master/ca.crt
 >
@@ -476,13 +476,13 @@ telegram群：https://t.me/erdongchan
 >
 > 选择 `UnblockNeteaseMusic Root CA` ，右上角点击 `安装`
 
-####c. 信任证书
+#### c. 信任证书
 
 > 进入`设置` > `通用` > `关于本机` > `证书信任设置` 下
 >
 > 开启 `UnblockNeteaseMusic Root CA` 
 
-###3. 添加网易云音乐`策略组`
+### 3. 添加网易云音乐`策略组`
 
 > - Quantumult X `设置` > `配置文件` > `编辑`
 >
@@ -506,7 +506,7 @@ telegram群：https://t.me/erdongchan
 >
 >     释义：这是一条静态策略，通过 `server-tag-regex` 正则筛选，将导入的节点中包含 `解锁网易云` 的节点全部归纳到 `Netease Unblock Server` 策略组下
 
-###4. 添加网易云音乐`分流规则`
+### 4. 添加网易云音乐`分流规则`
 
 > - Quantumult X `设置` > `配置文件` > `编辑`
 >
@@ -520,7 +520,7 @@ telegram群：https://t.me/erdongchan
 >
 >   释义：这是一条分流规则，使用 `GeQ1an大佬` 的 `Netease Music.list` 分流规则，规则名称为 `Netease Music 规则`，每24小时(24x60分x60秒=86400秒)更新一次。
 
-###5. 导入网易云音乐解锁服务器节点
+### 5. 导入网易云音乐解锁服务器节点
 
 > - 将节点信息手动写入配置文件 `[server_local]` 模块下
 >
@@ -584,16 +584,16 @@ telegram群：https://t.me/erdongchan
 
 
 
-##四、Quantumult X小白系列教程｜进阶使用：了解重写和MITM解密，实现广告屏蔽、TikTok不拔卡区域解锁、Youtube广告屏蔽
+## 四、Quantumult X小白系列教程｜进阶使用：了解重写和MITM解密，实现广告屏蔽、TikTok不拔卡区域解锁、Youtube广告屏蔽
 
 ❗️**`视频教程地址：`**https://youtu.be/QaMxTYuYU6U
 
-###1. 了解重写 / MITM解密
+### 1. 了解重写 / MITM解密
 
 - 简单来说，重写 和 mitm解密 主要用来去广告以及某些重定向，去广告就不用说了，至于什么叫重定向咱也不太懂，反正我在网上看的就是：比如将 `google.cn` 重定向 `google.hk`
 - 配置文件中对应的模块：**`[rewrite]` / `[mitm]`  ** 
 
-###2. MITM解密
+### 2. MITM解密
 
 - 官方解释：mitm 根证书用于 https 解析，只有配置了主机名的请求才会被 mitm 模块进行解析。
 
@@ -607,7 +607,7 @@ telegram群：https://t.me/erdongchan
   >
   > 证书安装完成、打开 `MitM` 开关
 
-###3. 重写脚本(网上其它教程习惯叫做 `复写脚本`)
+### 3. 重写脚本(网上其它教程习惯叫做 `复写脚本`)
 
 - 官方解释(我也不懂)：用于修改 HTTP 或 HTTPS 请求和响应
 
@@ -674,9 +674,9 @@ telegram群：https://t.me/erdongchan
   >     >
   >     > MitM模块下，hostname后添加`ios.prod.ftl.netflix.com`
 
-###4. 重写实战应用
+### 4. 重写实战应用
 
-####a. 添加 `神机去广告重写订阅`
+#### a. 添加 `神机去广告重写订阅`
 
 > ```
 > https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf
@@ -688,7 +688,7 @@ telegram群：https://t.me/erdongchan
 >
 > 启用重写，重新进入知乎app，广告内容全部消失。
 
-####b. 添加 `神机TikTok区域解锁重写订阅`
+#### b. 添加 `神机TikTok区域解锁重写订阅`
 
 > ```
 > https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Unlock/TikTokUS.conf
@@ -704,7 +704,7 @@ telegram群：https://t.me/erdongchan
 >
 > ⚠️ 截至2020.11.10，`TikTok区域解锁重写` 支持的TikTok最高版本为17.8.1，仍需要用重写订阅来解锁TikTok的同学切勿升级
 
-####c. 添加 `神机去Youtube广告重写订阅`
+#### c. 添加 `神机去Youtube广告重写订阅`
 
 > ```
 > https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf
@@ -719,18 +719,18 @@ telegram群：https://t.me/erdongchan
 
 
 
-##五、Quantumult X小白系列教程｜进阶使用：了解task_local，配合重写功能、利用crontab命令，玩转圈X定时脚本任务，各种签到薅羊毛整起来
+## 五、Quantumult X小白系列教程｜进阶使用：了解task_local，配合重写功能、利用crontab命令，玩转圈X定时脚本任务，各种签到薅羊毛整起来
 
 ❗️**`视频教程地址：`**https://youtu.be/HrrOXEvrXBA
 
-###1. 了解任务脚本
+### 1. 了解任务脚本
 
 - 通过 `crontab命令`，在固定时间 或 间隔时间 执行指定的 JS 脚本。
 - 配置文件中对应的模块 **`[task_local]`**
 - 大部分任务脚本需要对应的 `本地重写` **`[rewrite_local]`** 脚本文件支持， [参考“添加本地重写脚本”部分](#3. 重写脚本(网上其它教程习惯叫做 `复写脚本`))
 - Quantumult X UI界面中对应的入口：`设置` > `调试` > `构造请求`
 
-###2. crontab 命令简单说明
+### 2. crontab 命令简单说明
 
 - 格式
 
@@ -743,7 +743,7 @@ telegram群：https://t.me/erdongchan
   >| 意义 | 分钟 | 小时 |  日  |  月  |       星期几       | 被执行的脚本路径 |
   >| 格式 | 0-59 | 0-23 | 1-31 | 1-12 | 0-7 (0和7为星期天) |                  |
 
-###3. 如何添加任务
+### 3. 如何添加任务
 
 #### a. 通过`引用本地任务脚本`添加任务
 
@@ -759,7 +759,7 @@ telegram群：https://t.me/erdongchan
 
   ⚠️ 开启iCloud资源文件夹后，默认使用`iCloud`路径下的文件，`我的iPhone`路径不被读取
 
-####b. 通过`引用远程路径任务脚本`添加任务
+#### b. 通过`引用远程路径任务脚本`添加任务
 
 - 大佬们一般都会在说明文档或者js文档的开头注释清楚脚本使用方法
 
@@ -767,7 +767,7 @@ telegram群：https://t.me/erdongchan
 
 - 举例：`京东多合一签到脚本` (by NobyDA)
 
-  [task_local]
+  task_local：
   
   ```
 https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东多合一签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true
@@ -777,19 +777,19 @@ https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBon
   
   `img-url=` 任务脚本在 `设置` > `调试` > `构造请求` 中的图标
   
-  [rewrite_local]
+  rewrite_local：
   
   ```
   https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
   ```
   
-  [mitm]
+  [mitm]：
   
   ```
   hostname = api.m.jd.com
   ```
 
-###4. 任务脚本实战举例 - 腾讯视频签到 (by [chavyleung](https://github.com/chavyleung/scripts/tree/master/videoqq))
+### 4. 任务脚本实战举例 - 腾讯视频签到 (by [chavyleung](https://github.com/chavyleung/scripts/tree/master/videoqq))
 
 #### a. 脚本本地引用 (引用本地重写脚本和本地任务脚本)
 
@@ -816,10 +816,8 @@ https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBon
   ```
   [MITM]
   *.video.qq.com
-  
   [rewrite_local]
   ^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qqmusic/qqmusic.cookie.js
-  
   [task_local]
   1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js, tag=腾讯视频签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/videoqq.png, enabled=true
   ```
