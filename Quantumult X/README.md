@@ -141,7 +141,7 @@ telegram群：https://t.me/erdongchan
 >   >   如果配置文件中节点信息不是 Quantumult X 格式，需要打开资源解析器
 >   >
 >   >   `设置` > `节点` > `引用(订阅)` > 右上角`添加` > 地址栏中输入保存的`文件名` > `确定`
->   >   
+>   >
 >   >   ⚠️ 开启iCloud资源文件夹后，默认使用`iCloud`路径下的文件，`我的iPhone`路径不被读取
 >
 > - 通过 `订阅链接` 导入节点
@@ -192,7 +192,7 @@ telegram群：https://t.me/erdongchan
 >   http(s)=example.com:443(端口号根据实际端口填写), username=可选, password=可选, fast-open=false, udp-relay=false, tag=节点名称
 >   ```
 
-###4. 开始使用
+### 4. 开始使用
 
 **我们可以根据使用需求，手动将 Quantumult X 的代理模式切换为 `全部代理`、`全部直连`、`规则分流` 三种模式** ;
 
@@ -294,7 +294,7 @@ telegram群：https://t.me/erdongchan
   > 例如：GeQ1an 的 GMedia.list 规则中 已经包含了 Netflix.list / Spotify.list / YouTube.list
   >
   > 如果你要对 Netflix.list / Spotify.list / YouTube.list 进行重新排序，请确保它们位于 GMedia.list 前面
-  
+
 - 配置文件中对应的模块：**`[filter_remote]`/`[filter_local]`**
 
 #### a. 分流规则工作原理
@@ -330,7 +330,6 @@ telegram群：https://t.me/erdongchan
 > ```
 > https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/GMedia.list
 > ```
->
 
 ###### b. 通过修改配置文件添加分流规则
 
@@ -554,14 +553,13 @@ telegram群：https://t.me/erdongchan
 >     > - 关闭` iCloud资源文件夹`
 >     >
 >     >   节点配置片段保存至 `本地` 路径下的 `我的iPhone/Quantumult X/Profiles/`
->     >
->   
+>
 > - `节点` > `引用(订阅)` > 右上角 `添加` > 输入 `文件名`
->   
+>
 >   ⚠️ 开启iCloud资源文件夹后，默认使用`iCloud`路径下的文件，`我的iPhone`路径不被读取
->   
+>
 >   如果文件内的节点信息不是Quantumult X可识别格式，请打开 `资源解析器`
->   
+>
 >     > 资源解析器 安装请参考 [教程一：安装资源解析器](#1.1 首先，给你的Quantumult X增加一个小工具：资源解析器)
 
 ### 6. 搞定，解锁网易云灰色音乐
@@ -658,13 +656,13 @@ telegram群：https://t.me/erdongchan
   >     >   > iCloud 文件路径：`iCloud/Quantumult X/Scripts/`
   >     >   >
   >     >   > 本地 文件路径：`我的iPhone/Quantumult X/Scripts/`
-  >   >   >
-  >     >   > 脚本引用方法：直接输入 `脚本文件名.js`
+  >
+  >   >   >脚本引用方法：直接输入 `脚本文件名.js`
   >   >
-  >     >   ⚠️ 开启iCloud资源文件夹后，默认使用`iCloud`路径下的文件，`我的iPhone`路径不被读取
+  >   >   ⚠️ 开启iCloud资源文件夹后，默认使用`iCloud`路径下的文件，`我的iPhone`路径不被读取
   >
   >   - 远程路径 `.js` 文件 `Store版本 1.0.5+版本可用`
-  >   
+  >
   >     > 举例 `获取Netflix剧集评分(by yichahucha)`
   >     >
   >     > ```
@@ -767,27 +765,29 @@ telegram群：https://t.me/erdongchan
 
 - 举例：`京东多合一签到脚本` (by NobyDA)
 
-  task_local：
-  
-  ```
-https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东多合一签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true
-  ```
-
-  `tag=` 任务脚本名称
-  
-  `img-url=` 任务脚本在 `设置` > `调试` > `构造请求` 中的图标
-  
-  rewrite_local：
-  
-  ```
-  https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-  ```
-  
-  [mitm]：
-  
-  ```
-  hostname = api.m.jd.com
-  ```
+  > [task_local]
+  >
+  > ```
+  > https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东多合一签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true
+  > ```
+  >
+  > `tag=` 任务脚本名称
+  >
+  > `img-url=` 任务脚本在 `设置` > `调试` > `构造请求` 中的图标
+  >
+  > [rewrite_local]
+  >
+  > ```
+  > https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+  > ```
+  >
+  > [mitm]
+  >
+  > ```
+  > hostname = api.m.jd.com
+  > ```
+  >
+  > 
 
 ### 4. 任务脚本实战举例 - 腾讯视频签到 (by [chavyleung](https://github.com/chavyleung/scripts/tree/master/videoqq))
 
@@ -796,30 +796,32 @@ https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBon
 - 作者提供配置方法
   需将 `本地重写[rewrite_local]脚本`和`任务[task_local]脚本`下载至 `iCloud` 或 `我的iPhone` 的 `/Quantumult/Scripts `路径下
 
-  ```
-  [MITM]
-  *.video.qq.com
-  
-  [rewrite_local]
-  ^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header videoqq.cookie.js
-  
-  [task_local]
-  1 0 * * * videoqq.js
-  ```
+  > ```
+  > [MITM]
+  > *.video.qq.com
+  > 
+  > [rewrite_local]
+  > ^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header videoqq.cookie.js
+  > 
+  > [task_local]
+  > 1 0 * * * videoqq.js
+  > ```
 
-####b. 脚本远程引用 (引用远程重写脚本和本地任务脚本)
+#### b. 脚本远程引用 (引用远程重写脚本和本地任务脚本)
 
 - 用Chrome扩展[Enhanced GitHub](https://chrome.google.com/webstore/detail/enhanced-github/anlikcnbgdeidpacdbdljnabclhahhmd) 获取Github文件真实链接
 
   再加上[Orz-3](https://github.com/Orz-3/task)大佬收集的task任务图标
 
-  ```
-  [MITM]
-  *.video.qq.com
-  [rewrite_local]
-  ^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qqmusic/qqmusic.cookie.js
-  [task_local]
-  1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js, tag=腾讯视频签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/videoqq.png, enabled=true
-  ```
+  > ```
+  > [MITM]
+  > *.video.qq.com
+  > 
+  > [rewrite_local]
+  > ^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/qqmusic/qqmusic.cookie.js
+  > 
+  > [task_local]
+  > 1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js, tag=腾讯视频签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/videoqq.png, enabled=true
+  > ```
 
   完美
