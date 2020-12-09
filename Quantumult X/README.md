@@ -702,6 +702,18 @@ telegram群：https://t.me/erdongchan
 >
 > ⚠️ 截至2020.11.10，`TikTok区域解锁重写` 支持的TikTok最高版本为17.8.1，仍需要用重写订阅来解锁TikTok的同学切勿升级
 
+> 使用我在第二期教程中提供的配置文件的朋友，可以参考添加以下策略组和分流规则。
+
+> 策略组（建议放在`国外媒体策略`下）
+> ```
+> static=TikTok, proxy, GMedia, US Server, HK Server, TW Server, SG Server, JP Server, direct, Final, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/TikTok.png
+> ```
+> 分流规则（建议放在Youtube规则后）
+> ```
+> # Tiktok规则
+> https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Video/TikTok.list, tag=TikTok 规则, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
+> ```
+
 #### c. 添加 `神机去Youtube广告重写订阅`
 
 > ```
