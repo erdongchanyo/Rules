@@ -1,0 +1,53 @@
+Quantumult X薅羊毛：
+「中青阅读极速版」
+还是有小伙伴不会啊，这里统一发一下
+
+第一步：添加远程重写订阅
+
+编辑配置文件，在[rewrite_remote]下粘贴以下代码：
+
+# 中青cookie获取
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/Youth/Youth_cookie.conf, tag=中青cookie获取, update-interval=86400, opt-parser=false, enabled=true
+
+# 中青阅读body获取
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/Youth/Youth_GetBody.conf, tag=中青阅读body获取, update-interval=86400, opt-parser=false, enabled=true
+
+第二步：添加定时任务
+编辑配置文件，在[task_local]下粘贴以下代码：
+
+# 中青签到&转盘宝箱
+*/30 * * * * https://raw.githubusercontent.com/CenBoMin/QuantumultX/master/Scripts/Youth/youth.js, tag= 中青签到&转盘宝箱, img-url=https://raw.githubusercontent.com/Orz-3/task/master/youth.png, enabled=true
+
+# 中青自动阅读
+10 1-23 * * * https://raw.githubusercontent.com/CenBoMin/QuantumultX/master/Scripts/Youth/Youth_AutoRead.js, tag=中青自动阅读, img-url=https://raw.githubusercontent.com/Orz-3/task/master/youth.png, enabled=true
+
+
+第三步：食用方法
+1：进入[重写]-[引用]
+启用「中青cookie获取」、禁用「中青阅读Body获取」
+
+a：进入app-我的-任务中心-签到一次
+获取签到cookie
+
+b：阅读一篇文章或者视频到获取金币奖励
+获取阅读请求body&阅读时长
+
+c：在阅读文章拉下面有个惊喜红包，点击获取
+获取惊喜红包
+
+手动执行一次「中青签到&转盘宝箱」
+看签到是不是正常
+
+2：进入[重写]-[引用]
+禁用「中青cookie获取」、启用「中青阅读Body获取」
+获取文章body
+
+阅读一篇文章或者视频到获取金币奖励
+通知：获取body成功
+
+手动执行一次「中青自动阅读」
+看脚本是否运行正常
+
+3：抽空阅读文章或视频，获取更多的body
+
+4：打开App-我的-填写邀请码：51858297
