@@ -15,3 +15,5 @@ https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/elem/el
 
 # 饿了么签到领现金
 0 9 * * * https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js, tag=饿了么签到领现金, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/ele.png, enabled=true
+
+添加完成后手动执行一次任务看是否正常
