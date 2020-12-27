@@ -18,11 +18,21 @@ https://github.com/ziye12/JavaScript
 12.10 默认现金大于10且在23点提现10元，23点40后显示今日收益统计
 12.11 修复git与手机 时间不兼容问题
 -----------------------------------
-cookie获取方法：
+食用方法：
+-----
+重写-引用，添加以下链接获取cookie：
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/qqreads/qqreads_cookie
+重写标签自行备注
 
 进 https://m.q.qq.com/a/s/d3eacc70120b9a37e46bad408c0c4c2a  
-
 进书库选择一本书,看10秒以下,然后退出，获取时长url和时长header以及更新body，看书一定不能超过10秒
+
+成功获取后可以将重写禁用
+-----
+[task_local]添加定时任务
+
+# 企鹅读书
+*/11 * * * * https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js, tag=企鹅读书, img-url=https://raw.githubusercontent.com/Orz-3/task/master/qqvip.png, enabled=true
 
 宝箱奖励为20分钟一次，自己根据情况设置定时，建议设置11分钟一次
 ------------------------------------
