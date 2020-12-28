@@ -1,0 +1,28 @@
+感谢 Sunert
+------------
+该远程重写配置只支持快手极速版
+------------
+食用方法：
+-----
+重写-引用，添加以下链接获取cookie：
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/kuaishou/kuaishou_cookie.conf
+重写标签自行备注
+
+-----
+[task_local]添加定时任务
+
+0 9 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js, tag=快手极速版, img-url=https://raw.githubusercontent.com/Orz-3/task/master/kuaishou.png, enabled=true
+
+任务脚本同时支持快手正式版和极速版
+
+-------------
+正式版Cookie签到有时效性、会掉签，但Cookie仍然可用于签到极速版；
+极速版Cookie只能用于极速版
+
+正式版APP获取Cookie方法:
+
+  1.将下方[rewrite_local]替换为以下：
+  http:\/\/uploads2\.gifshow\.com\/rest\/n\/system\/speed url script-request-header https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js
+  无需填写hostname;
+  
+  2.打开APP稍等几秒，即可获取Cookie.
