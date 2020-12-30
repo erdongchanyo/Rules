@@ -1,0 +1,26 @@
+Quantumult X薅羊毛：
+「返利网红包」
+返利网红包突然复活，12月30、31号两天有效
+
+第一步：添加远程重写订阅
+编辑配置文件，在[rewrite_remote]下粘贴以下代码：
+
+# 返利网红包cookie获取
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/flw/flwhb_cookie.conf, tag=返利网红包cookie获取, update-interval=86400, opt-parser=false, enabled=true
+
+第二步：添加定时任务
+编辑配置文件，在[task_local]下粘贴以下代码：
+
+# 返利网红包
+0 1-16 10 30,31 * * https://raw.githubusercontent.com/ziye12/JavaScript/master/flwhbziye.js, tag=返利网红包, enabled=true
+
+第三步：食用方法
+
+1，下载app：http://m.a8fdj.cn/Invite/promotion?id=775&spm=page_name.h5.pty-wxzcpv~std-65354&go=http%3A%2F%2Fhuodong.a8fdj.cn%2Fh5%2FInvitefriendsreward%2FregisterCallback%3Fuserid%3D388609816%26id%3D775%26sn%3Db9438341f0e45cd5e46f6fd74384dd85
+注册登陆后，进入首页-点击右上角-[现金]图标：获取cookie成功
+
+2，禁用远程重写
+
+3，手动自行任务-直到提示：礼盒已全部开启，
+
+4，进入app首页-点击[现金]图标-提现至微信（需关注微信公众号）
