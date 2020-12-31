@@ -14,7 +14,7 @@
 
 感谢规则、脚本等提供(不分先后)：
 
-[DivineEngine](https://github.com/DivineEngine)、 [GeQ1an](https://github.com/GeQ1an)、[NobyDa](https://github.com/NobyDa)、[lhie1](https://github.com/lhie1)、[chavyleung](https://github.com/chavyleung)、[lxk0301](https://github.com/lxk0301)、[yichahucha](https://github.com/yichahucha)、[Flydreams](https://gitee.com/Sunert)
+[DivineEngine](https://github.com/DivineEngine)、 [GeQ1an](https://github.com/GeQ1an)、[NobyDa](https://github.com/NobyDa)、[lhie1](https://github.com/lhie1)、[chavyleung](https://github.com/chavyleung)、[lxk0301](https://github.com/lxk0301)、[yichahucha](https://github.com/yichahucha)、[Sunert(Flydreams)](https://github.com/Sunert/Scripts)
 
 感谢icon资源提供(不分先后)：
 
