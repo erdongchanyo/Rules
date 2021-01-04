@@ -1,0 +1,26 @@
+限时羊毛：1月1日-1月31日
+抖音极速版[签到集音符]，每日获得的音符在凌晨自动兑换为现金
+下载app，点击左上角红包进入[签到集音符]页面-点击助力好友，填写邀请码：8907103331
+立刻获得1元现金(最高2元)，可提现至支付宝
+-----
+作者：执意ZhiYi-N
+作者自述不要太快刷视频，有bug，目前在尝试解决
+橙子建议可以先添加对应重写并添加定时任务，作者脚本可能随时更新
+实在不行咱手动也可以：每日早上签到、晚上步数兑换音符、平时手动刷刷视频
+
+圈X食用方法：
+-----
+重写-引用，添加以下链接获取cookie：
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/dyjsb/dyjs_cookie.conf
+重写标签自行备注
+
+1、进app，点击左上角红包-进入[签到集音符]签到，提示：获取signheader成功、获取signcookie成功（作者提示：已签到应该获取不到，不过我好像获取到了）
+2、[签到集音符]页面下拉-[音符兑好礼]-授权获取步数，获取stepheader和stepkey，我没获取成功，但不影响手动兑换音符
+3、返回视频界面，观看视频，红包转完一圈，提示获取readheader成功、获取readkey成功
+
+成功获取后可以将重写禁用
+-----
+[task_local]添加定时任务
+
+# 抖音极速版
+*/10 * * * * https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/dyjsb.js, tag=抖音极速版
