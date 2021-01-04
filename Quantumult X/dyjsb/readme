@@ -23,6 +23,7 @@ https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/dyjsb/d
 [task_local]添加定时任务
 
 # 抖音极速版
-*/10 * * * * https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/dyjsb.js, tag=抖音极速版
+*/5 * * * * https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/dyjsb.js, tag=抖音极速版
 
+定时任务为5分钟一次，经橙子实测，虽然日志有一堆乱码，但可以金币增加，只不过每次都是个位数，有总比没有强。
 当然，邀请朋友是羊毛的最快方法。
