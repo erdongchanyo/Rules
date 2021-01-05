@@ -1,0 +1,21 @@
+今日头条极速版
+-----
+作者：执意ZhiYi-N
+-----
+圈X食用方法：
+-----
+重写-引用，添加以下链接获取cookie：
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/jrtt/jrtt_cookie.conf
+重写标签自行备注
+进入app
+1、右上角签到即可获取签到cookie
+2、进一次农场即可获取农场cookie
+3、读文章(慢慢读)弹出金币获取读文章cookie
+
+成功获取后可以将重写禁用
+-----
+[task_local]添加定时任务
+
+# 抖音极速版
+# 今日头条极速版
+5,35 8-23 * * * https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/jrtt.js, tag=今日头条极速版, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jrtt.png, enabled=true
