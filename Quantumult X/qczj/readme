@@ -16,21 +16,20 @@ https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/qczj/he
 #汽车之家极速版获取body
 https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/qczj/body.conf, tag=汽车之家极速版获取body, update-interval=86400, opt-parser=false, enabled=true
 
-点击-活动
+a.点击-活动
 获取日常任务body:成功
 获取账户信息body:成功
 获取活动body:成功
 
-点击-首页右上角(未能成功获取)
+b.点击-首页右上角(未能成功获取)
 获取时段body
 获取时段翻倍body
 
-
-点击-活动-分享赚现金-自己助力自己(没找到在哪里)
+c.微信扫码 https://raw.githubusercontent.com/ziye12/QCZJSPEED/main/Task/qczjzl.png，登陆自己的账号，然后自己助力自己。
 获取助力任务header
 获取助力任务body
 
-点击-活动-现金收入-提现-立即提现
+d.点击-活动-现金收入-提现-立即提现
 获取提现body:成功
 
 获取成功后禁用[汽车之家极速版获取body]
