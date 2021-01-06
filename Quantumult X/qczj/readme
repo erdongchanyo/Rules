@@ -16,6 +16,9 @@ https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/qczj/he
 #汽车之家极速版获取body
 https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/qczj/body.conf, tag=汽车之家极速版获取body, update-interval=86400, opt-parser=false, enabled=true
 
+#汽车之家极速版获取时段body
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/qczj/time_body.conf, tag=汽车之家极速版获取时段body, update-interval=86400, opt-parser=false, enabled=true
+
 a.点击-活动
 获取日常任务body:成功
 获取账户信息body:成功
@@ -34,30 +37,23 @@ d.点击-活动-现金收入-提现-立即提现
 
 获取成功后禁用[汽车之家极速版获取body]
 
-3、编辑配置文件，在[rewrite_remote]下粘贴以下代码：
-
-#汽车之家极速版获取时段body
-https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/qczj/time_body.conf, tag=汽车之家极速版获取时段body, update-interval=86400, opt-parser=false, enabled=true
-
-添加boxjs订阅
+3、添加boxjs订阅
 https://raw.githubusercontent.com/ziye12/QCZJSPEED/main/Task/ziye.qczjboxjs.json
 
 进入boxjs设置[获取body]的值
 
-[获取body] = 1，保存
+[获取body] = 1，保存，进入app
 点击-活动-右上角领惊喜福利
 获取惊喜福利body:成功
 
-[获取body] = 2，保存
+[获取body] = 2，保存，进入app
 点击-活动-看视频领金币，查看一个视频
 获取视频body:成功
 
-[获取body] = 3，保存
+[获取body] = 3，保存，进入app
 点击-活动-观看福利视频
 获取福利视频body:成功
 
-[获取body] = 4，保存
+[获取body] = 4，保存，进入app
 点击-活动-领取福利
 获取福利body:成功
-
-
