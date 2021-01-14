@@ -538,12 +538,15 @@ telegram群：https://t.me/erdongchan
 >     文件名可以包含中文(空格除外)
 >
 >     ```
->     shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, obfs=ws, fast-open=false, udp-relay=false, tag=解锁网易云节点1-如风免费收集提供-收费请举报
->     http=aimer.one:3333,fast-open=false, udp-relay=false, tag=解锁网易云节点2-Leeds免费收集提供-收费请举报
->     http=106.52.127.72:19951, fast-open=false, udp-relay=false, tag=解锁网易云节点3-Lolico免费收集提供-收费请举报
->     http=taron.top:200, fast-open=false, udp-relay=false, tag=解锁网易云节点4-Lolico免费收集提供-收费请举报
->     http=music.lolico.me:39000, fast-open=false, udp-relay=false, tag=解锁网易云节点5-Lolico免费收集提供-收费请举报
->     http=lolico.me:443,fast-open=false, udp-relay=false, tag=解锁网易云节点6-Lolico免费收集提供-收费请举报
+>     http=music.lolico.me:39000, fast-open=false, udp-relay=false, tag=解锁网易云节点1
+
+http=block4music.poetyin.me:39000, fast-open=false, udp-relay=false, tag=解锁网易云节点2
+
+shadowsocks=blockmusic.poetyin.me:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=解锁网易云节点3
+
+shadowsocks=music.desperadoj.com:30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=解锁网易云节点4
+
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_emx2, fast-open=false, udp-relay=false, tag=解锁网易云节点5
 >     ```
 >
 >     > - 打开` iCloud资源文件夹`
