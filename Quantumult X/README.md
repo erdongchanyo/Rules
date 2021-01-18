@@ -707,6 +707,7 @@ telegram群：https://t.me/erdongchan
 > ```
 https://raw.githubusercontent.com/Tartarus2014/Surge-Script/master/Unlock/TikTokUK.sgmodule
 > ```
+>
 > 如果之前老版本使用神机远程重写进行过解锁，务必禁用之前的解锁重写。
 > 
 > 切换区域的话把UK进行替换就行，目前烧烤哥github库中明确可以替换的区域有JP、KR、UK、US(目测继续增加更新中)
@@ -717,19 +718,8 @@ https://raw.githubusercontent.com/Tartarus2014/Surge-Script/master/Unlock/TikTok
 > ```
 > https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/TikTok/18.3.0/TikTok_US.conf
 > ```
+>
 > 换区：手动更换链接最后的“US”为你想换的区域代码，测试支持JP、KR、TW、UK、US
-
-> 使用我在第二期教程中提供的配置文件的朋友，可以参考添加以下策略组和分流规则。
-
-> 策略组（建议放在`国外媒体策略`下）
-> ```
-> static=TikTok, proxy, GMedia, US Server, HK Server, TW Server, SG Server, JP Server, direct, Final, img-url=https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/IconSet/TikTok.png
-> ```
-> 分流规则（建议放在Youtube规则后）
-> ```
-> # Tiktok规则
-> https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Video/TikTok.list, tag=TikTok 规则, force-policy=TikTok, update-interval=86400, opt-parser=false, enabled=true
-> ```
 
 #### c. 添加 `神机去Youtube广告重写订阅`
 
