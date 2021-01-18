@@ -12,7 +12,7 @@ https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/xp/xp_h
 编辑配置文件，在[task_local]下粘贴以下代码：
 
 # 笑谱(by ziye
-*/5 3-23 * * * https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/iboxpay.js, tag=笑谱(by ziye, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/xp.png, enabled=true
+*/10 6-23 * * * https://raw.githubusercontent.com/ziye12/JavaScript/main/Task/iboxpay.js, tag=笑谱(by ziye, img-url=https://raw.githubusercontent.com/ChuheGit/1/main/QuantumultX/Gallery/API-Icon/xp.png, enabled=true
 
 第三步：食用方法
 1：进入[重写]-[引用]
