@@ -416,7 +416,7 @@ telegram群：https://t.me/erdongchan
 - ❗️**`配置文件下载地址：`**
 
   ```
-  https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/EDC_Basic.conf
+  hhttps://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/quantumult_EDC-Lazy.conf
   ```
 
   配置文件中包含的策略组和规则有：
@@ -425,17 +425,16 @@ telegram群：https://t.me/erdongchan
 
   - 国外媒体策略 `(添加了对应规则)`
 
-    > 国外媒体策略 / Netflix策略 / Youtube策略 / Spotify策略
+    > 国外媒体策略 / Netflix策略 / Youtube策略 / Spotify策略 / TikTok策略
 
   - 国内连接策略 `(添加了对应规则)`
 
-  - 国内媒体策略 `(添加了对应规则)`
-    （其中`解锁网易云音乐策略组`和`解锁网易云分流规则`已经被#号注释掉
-    （需要手动删除策略组和分流规则前面的#号，让起生效
-
   - 软件&服务策略 `(添加了对应规则)`
 
-    > Telegram策略 / Apple策略 / Microsoft策略 / Paypal策略
+    > Telegram策略 / Twitter策略 / Apple策略 / TestFlight策略 / Microsoft策略 / Paypal策略 / LOL策略
+    
+  - 国内媒体策略 `(添加了对应规则)`
+  - 网易云策略
 
   - 最终策略 `(添加了对应规则)`
 
@@ -673,10 +672,12 @@ telegram群：https://t.me/erdongchan
 
 ### 4. 重写实战应用
 
-#### a. 添加 `神机去广告重写订阅`
+#### a. 添加 `神机去广告重写订阅`(共2条)
 
 > ```
 > https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf
+>
+> https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/AdvertisingPlus.conf
 > ```
 >
 > 我们在浏览器打开规则网址，看一下内容，以 `zhihu` 一段为例
@@ -685,8 +686,9 @@ telegram群：https://t.me/erdongchan
 >
 > 启用重写，重新进入知乎app，广告内容全部消失。
 
-#### b. 添加 `神机TikTok区域解锁重写订阅`
+#### b. 添加 `神机TikTok区域解锁重写订阅`（
 
+> 17.9.0以下版本
 > ```
 > https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Unlock/TikTokUS.conf
 > ```
@@ -699,7 +701,23 @@ telegram群：https://t.me/erdongchan
 >
 > ⚠️ TikTok 区域解锁重写一次只可启用一个，不可多个地区同时使用；
 >
-> ⚠️ 截至2020.11.10，`TikTok区域解锁重写` 支持的TikTok最高版本为17.8.1，仍需要用重写订阅来解锁TikTok的同学切勿升级
+> 17.9.0-18.2.1版本
+>
+> 利用资源解析器解析surge模块，打开重写-引用(打开资源解析器)-添加以下远程链接：
+> ```
+https://raw.githubusercontent.com/Tartarus2014/Surge-Script/master/Unlock/TikTokUK.sgmodule
+> ```
+> 如果之前老版本使用神机远程重写进行过解锁，务必禁用之前的解锁重写。
+> 
+> 切换区域的话把UK进行替换就行，目前烧烤哥github库中明确可以替换的区域有JP、KR、UK、US(目测继续增加更新中)
+>
+> 18.3.0版本方案：
+> 
+> 设置-重写-引用-添加以下远程重写订阅
+> ```
+> https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/TikTok/18.3.0/TikTok_US.conf
+> ```
+> 换区：手动更换链接最后的“US”为你想换的区域代码，测试支持JP、KR、TW、UK、US
 
 > 使用我在第二期教程中提供的配置文件的朋友，可以参考添加以下策略组和分流规则。
 
