@@ -484,7 +484,7 @@ telegram群：https://t.me/erdongchan
 
 > - Quantumult X `设置` > `配置文件` > `编辑`
 >
-> - 找到 `[proxy]` 模块
+> - 找到 `[policy]` 模块
 >
 > - 增加以下策略组
 >
