@@ -1,0 +1,5 @@
+HOST,www.clubhouseapi.com,Clubhouse
+HOST,clubhouseprod.s3.amazonaws.com,Clubhouse
+HOST,clubhouse.pubnub.com,Clubhouse
+HOST,maintenance.joinclubhouse.com,Clubhouse
+HOST-KEYWORD,clubhouse,Clubhouse
