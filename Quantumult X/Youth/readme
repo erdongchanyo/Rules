@@ -17,8 +17,8 @@ update：
 # 中青cookie获取
 https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/Youth/Youth_cookie.conf, tag=中青cookie获取, update-interval=86400, opt-parser=false, enabled=true
 
-# 中青阅读body获取
-https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/Youth/Youth_Read.conf, tag=中青阅读body获取, update-interval=86400, opt-parser=false, enabled=true
+# 中青body获取
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/Youth/Youth_Read.conf, tag=中青body获取, update-interval=86400, opt-parser=false, enabled=true
 ----------
 
 第二步：添加定时任务
