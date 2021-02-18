@@ -25,10 +25,10 @@ https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/Youth/Y
 编辑配置文件，在[task_local]下粘贴以下代码：
 
 # 中青签到&转盘宝箱
-*/30 * * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, tag= 中青签到&转盘宝箱, img-url=https://raw.githubusercontent.com/Orz-3/task/master/youth.png, enabled=true
+*/10 5-23 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, tag= 中青签到&转盘宝箱, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Youth.png, enabled=true
 
 # 中青自动阅读
-30 1-23 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/Youth_Read.js, tag=中青自动阅读, img-url=https://raw.githubusercontent.com/Orz-3/task/master/youth.png, enabled=true
+10 */2 * * * https://raw.githubusercontent.com/Sunert/Scripts/master/Task/Youth_Read.js, tag=中青自动阅读, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Youth.png, enabled=true
 ----------
 
 第三步：食用方法
