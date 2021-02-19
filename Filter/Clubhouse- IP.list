@@ -21,11 +21,13 @@ IP-CIDR, 103.123.127.0/24, direct
 IP-CIDR, 128.1.87.0/24, direct
 IP-CIDR, 129.227.57.0/24, direct
 IP-CIDR, 120.227.115.0/24, direct
+IP-CIDR, 129.227.71.0/24, direct
 IP-CIDR, 129.227.115.0/24, direct
 IP-CIDR, 130.65.41.0/24, direct
 IP-CIDR, 148.153.172.0/24, direct
 IP-CIDR, 164.52.0.0/24, direct
 IP-CIDR, 164.52.6.0/24, direct
+IP-CIDR, 164.52.32.0/24, direct
 IP-CIDR, 164.52.102.0/24, direct
 IP-CIDR, 164.52.124.0/24, direct
 IP-CIDR, 199.190.44.0/24, direct
