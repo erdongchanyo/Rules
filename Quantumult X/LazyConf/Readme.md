@@ -27,7 +27,7 @@
 
 ## A-入门版：quantumult_EDC-Lazy-Lite.conf
 
-地址：https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/quantumult_EDC-Lazy-Lite.conf
+地址：https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/LazyConf/quantumult_EDC-Lazy-Lite.conf
 
 **——————————**
 
@@ -46,7 +46,7 @@
 
 ## B-基础版：quantumult_EDC-Lazy-Normal.conf
 
-地址：https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/quantumult_EDC-Lazy-Normal.conf
+地址：https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/LazyConf/quantumult_EDC-Lazy-Normal.conf
 
 **——————————**
 
@@ -121,7 +121,7 @@
 
 ## C-Pro版：quantumult_EDC-Lazy.conf
 
-地址：https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/quantumult_EDC-Lazy.conf
+地址：https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/LazyConf/quantumult_EDC-Lazy.conf
 
 **——————————**
 
