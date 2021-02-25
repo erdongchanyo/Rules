@@ -1,0 +1,26 @@
+Quantumult X薅羊毛：
+「芝嫲视频」
+感谢ziye提供脚本
+—————
+App必须用手机号注册，注册要求填写邀请码，注册完成后绑定实名认证微信号。
+耳东橙邀请码：613496540
+ziye邀请码：612545154
+—————
+
+第一步：添加远程重写订阅获取header
+编辑配置文件，在[rewrite_remote]下粘贴以下代码：
+
+# 芝嫲视频body获取(ziye
+https://github.com/erdongchanyo/Rules/raw/main/Quantumult%20X/zmsp/body.conf, tag=芝嫲视频body获取(ziye, update-interval=86400, opt-parser=false, enabled=true
+
+添加后进入app-夺宝
+提示：芝嫲视频 zhimabodyVal 成功
+
+第二步：添加定时任务
+编辑配置文件，在[task_local]下粘贴以下代码：
+
+# 芝嫲视频
+0 * * * * https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/zhima.js, tag=芝嫲视频, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Zhimashipin.png, enabled=true
+
+第三步：
+手动运行一次任务，看是否正常
