@@ -1,0 +1,31 @@
+Quantumult X薅羊毛：
+「笑谱」
+感谢ziye提供脚本
+—————
+邀请码：无
+—————
+第一步：添加远程重写订阅获取token
+编辑配置文件，在[rewrite_remote]下粘贴以下代码：
+
+# 笑谱token获取(by ziye
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/xp/xp_token.conf, tag=笑谱token获取(ziye, update-interval=86400, opt-parser=false, enabled=true
+
+添加后，如果已经登陆，请退出登陆
+重新登陆笑谱app
+提示：获取refreshtoken成功
+
+第二步：添加定时任务
+编辑配置文件，在[task_local]下粘贴以下代码：
+
+# 笑谱完整版
+*/20 8-23 * * * https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/iboxpay.js, tag=笑谱完整版(by ziye, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Xiaopu.png, enabled=true
+
+第三步：
+手动运行一次任务，看是否正常
+
+boxjs可设置
+设置任务：0开视频关直播;1开视频开直播;2关视频开直播
+设置提现金额：可设置 0,1,15,30,50,100  , 默认0关闭
+
+boxjs订阅
+https://raw.githubusercontent.com/ziye66666/JavaScript/main/Task/ziye.boxjs.json
