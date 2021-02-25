@@ -1,5 +1,10 @@
 cookie获取远程重写集合
 
+编辑配置文件，在[rewrite_remote]下粘贴以下代码：
+
+# cookie获取远程重写集合
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/rewrite/cookie_get.conf, tag=cookie获取远程重写集合, update-interval=86400, opt-parser=false, enabled=true
+
 包含：
 
 京东多合一签到cookie获取
