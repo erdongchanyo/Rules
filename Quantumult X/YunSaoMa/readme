@@ -4,7 +4,10 @@ Quantumult X薅羊毛：
 感谢肥皂
 —————
 每日收益1元左右，提现秒到
-类似番茄看看，番茄看看黑了就跑云扫码，云扫码黑了就跑番茄看看
+类似番茄看看，番茄看看黑了就跑云扫码，云扫码黑了就跑番茄看看。
+
+番茄看看教程：
+https://t.me/erdongchan_fuli/49
 —————
 入口：微信扫码进入新页面-长按识别[临时码]-进入[云扫码]
 自动阅读后弹出提示：
@@ -15,10 +18,6 @@ Quantumult X薅羊毛：
 编辑配置文件，在[rewrite_remote]下粘贴以下代码：
 
 https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/YunSaoMa/Getck.conf, tag=云扫码ck获取(feizao, update-interval=86400, opt-parser=false, enabled=true
-
-扫码后进入-点击[阅读任务A]，点击开始阅读，完成一次阅读即可获取数据
-提示：
-番茄看看阅读数据获取成功
 
 第二步：添加定时任务
 编辑配置文件，在[task_local]下粘贴以下代码：
