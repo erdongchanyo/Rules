@@ -4,7 +4,6 @@ Quantumult X薅羊毛：
 —————
 下载APP：http://yuedongzu.yichengw.cn/?id=31648
 —————
-
 第一步：添加远程重写订阅获取header
 编辑配置文件，在[rewrite_remote]下粘贴以下代码：
 
@@ -17,6 +16,8 @@ https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/YueDong
 
 第三步：添加定时任务
 编辑配置文件，在[task_local]下粘贴以下代码：
+
+⚠️cron设置保证每天25次以上就行，默认8点睡7点醒，时间务必包括这两个点
 
 0,30 0-23 * * * https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/yuedongzu.js, tag=悦动族(ziye, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Yuedongzu.png, enabled=true
 
