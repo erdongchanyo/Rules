@@ -1,0 +1,28 @@
+Quantumult X薅羊毛：
+「悦动族」
+感谢ziye提供脚本
+—————
+下载APP：http://yuedongzu.yichengw.cn/?id=31648
+—————
+
+第一步：添加远程重写订阅获取header
+编辑配置文件，在[rewrite_remote]下粘贴以下代码：
+
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/YueDongZu/getck.conf, tag=悦动族ck获取(ziye, update-interval=86400, opt-parser=false, enabled=true
+
+第二步：登陆APP
+提示：获取 yuedongzutokenVal 成功
+
+获取成功后可以禁用远程重写
+
+第三步：添加定时任务
+编辑配置文件，在[task_local]下粘贴以下代码：
+
+0,30 0-23 * * * https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/yuedongzu.js, tag=悦动族(ziye, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Yuedongzu.png, enabled=true
+
+第四步：
+boxjs可设置多账号
+可设置提现金额：0、0.3、1、5、50、100、200、888，默认0关闭提现，设置888由上至下循环提现
+
+boxjs地址：
+https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/ziye.boxjs.json
