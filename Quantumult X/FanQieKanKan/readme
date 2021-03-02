@@ -1,0 +1,27 @@
+Quantumult X薅羊毛：
+「微信端-番茄看看阅读任务」
+感谢zhiyi提供脚本
+—————
+入口：微信扫码进入
+每天跑脚本前，手动阅读几篇文章不容易黑
+—————
+
+第一步：添加远程重写订阅获取header
+编辑配置文件，在[rewrite_remote]下粘贴以下代码：
+
+https://github.com/erdongchanyo/Rules/raw/main/Quantumult%20X/FanQieKanKan/getck.conf, tag=番茄看看ck获取(zhiyi, update-interval=86400, opt-parser=false, enabled=true
+
+扫码后进入-点击[阅读任务A]，点击开始阅读，完成一次阅读即可获取数据
+提示：
+番茄看看阅读数据获取成功
+
+第二步：添加定时任务
+编辑配置文件，在[task_local]下粘贴以下代码：
+
+15 12,14,16,20 * * * https://raw.githubusercontent.com/age174/-/main/fqkk.js, tag=番茄看看, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Fanqiekankan.png, enabled=true
+
+第三步：
+手动运行一次任务，看是否正常
+
+boxjs地址：
+https://raw.githubusercontent.com/age174/-/main/feizao.box.json
