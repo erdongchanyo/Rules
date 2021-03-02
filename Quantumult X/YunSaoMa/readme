@@ -25,8 +25,5 @@ https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/YunSaoM
 
 15 12,14,16,20,22 * * * https://raw.githubusercontent.com/age174/-/main/ysm.js, tag=云扫码(feizao, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Yunsaoma.png, enabled=true
 
-第三步：
-手动运行一次任务，看是否正常
-
 boxjs地址：
 https://raw.githubusercontent.com/age174/-/main/feizao.box.json
