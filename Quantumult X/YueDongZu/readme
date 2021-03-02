@@ -4,7 +4,7 @@ Quantumult X薅羊毛：
 —————
 下载APP：http://yuedongzu.yichengw.cn/?id=31648
 —————
-第一步：添加远程重写订阅获取header
+第一步：添加远程重写订阅获取ck
 编辑配置文件，在[rewrite_remote]下粘贴以下代码：
 
 https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/YueDongZu/getck.conf, tag=悦动族ck获取(ziye, update-interval=86400, opt-parser=false, enabled=true
