@@ -20,7 +20,7 @@ https://github.com/erdongchanyo/Rules/raw/main/Quantumult%20X/zmsp/body.conf, ta
 编辑配置文件，在[task_local]下粘贴以下代码：
 
 # 芝嫲视频
-0 * * * * https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/zmsp/zhima.js, tag=芝嫲视频, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Zhimashipin.png, enabled=true
+0 * * * * https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/zhima.js, tag=芝嫲视频, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Zhimashipin.png, enabled=true
 
 第三步：
 手动运行一次任务，看是否正常
