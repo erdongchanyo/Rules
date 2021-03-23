@@ -688,39 +688,19 @@ telegram群：https://t.me/erdongchan
 
 #### b. 添加 `神机TikTok区域解锁重写订阅`（
 
-> - 17.9.0以下版本
+> - 17.9.0以上版本
 >     > ```
->     > https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Unlock/TikTokUS.conf
+>     > https://raw.githubusercontent.com/Tartarus2014/Surge-Script/master/Unlock/TikTokUS.sgmodule
 >     > ```
 >     >
->     > `DivineEngine` 大佬目前提供的远程TikTok区域解锁重写一共可以解锁5个区域
+>     > `烧烤哥` 大佬目前提供的远程TikTok区域解锁重写一共可以解锁5个区域，圈x使用时请打开 资源解析器
 >     >
 >     > 分别为：日本`JP`、韩国`KR`、台湾`TW`、英国`UK`、美国`US`
 >     >
->     > 如果要修改解锁区域，只需将订阅地址中最后 `TikTokUS.conf` 中的区域代码 `US` 进行替换即可
+>     > 如果要修改解锁区域，只需将订阅地址中最后 `TikTokUS.sgmodule` 中的区域代码 `US` 进行替换即可
 >     >
 >     > ⚠️ TikTok 区域解锁重写一次只可启用一个，不可多个地区同时使用；
 >
-> - 17.9.0-18.2.1版本
->     >
->     > 利用资源解析器解析surge模块，打开重写-引用(打开资源解析器)-添加以下远程链接：
->     > ```
->     >https://raw.githubusercontent.com/Tartarus2014/Surge-Script/master/Unlock/TikTokUK.sgmodule
->     > ```
->     >
->     > 如果之前老版本使用神机远程重写进行过解锁，务必禁用之前的解锁重写。
->     >
->     > 切换区域的话把UK进行替换就行，目前烧烤哥github库中明确可以替换的区域有JP、KR、UK、US(目测继续增加更新中)
->
-> - 18.3.0版本方案：
->     >
->     > 设置-重写-引用-添加以下远程重写订阅
->     > ```
->     > https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/TikTok/18.3.0/TikTok_US.conf
->     > ```
->     >
->     > 换区：手动更换链接最后的“US”为你想换的区域代码，测试支持JP、KR、TW、UK、US
-
 #### c. 添加 `神机去Youtube广告重写订阅`
 
 > ```
