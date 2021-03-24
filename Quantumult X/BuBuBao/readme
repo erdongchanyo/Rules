@@ -19,7 +19,7 @@ https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/BuBuBao
 
 ⚠️cron设置每天35次以上就行
 
-0,30 0-23 * * * https://raw.githubusercontent.com/ziye11/JavaScript/main/Task/bububao.js, tag=步步宝(ziye, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Bububao.png, enabled=true
+0,30 0-23 * * * http://ziye.animatedlife.top:8888/down/hnsti2HbeRAn?fname=Task/bububao.js, tag=步步宝(ziye, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/taskicon/Bububao.png, enabled=true
 
 第四步：
 boxjs可设置多账号
