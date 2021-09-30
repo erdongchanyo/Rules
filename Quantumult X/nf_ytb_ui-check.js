@@ -64,12 +64,12 @@ var flags = new Map([[ "AC" , "🇦🇨" ] , [ "AF" , "🇦🇫" ] , [ "AI" , "�
     
     console.log(code)
     if (code === 'Not Available') {
-      result['content1'] = '⚠️ 该节点未解锁 YouTube Premium'
+      result['content1'] = '⚠️ 该节点不支持 YouTube Premium'
       //return
     } else if (code === "timeout") {
       result['content1'] = "🛑 测试超时"
     } else {
-      result['content1'] = "✅ 该节点已解锁 YouTube Premium"
+      result['content1'] = "✅ 该节点支持 YouTube Premium"
     }
     $done({"title":result["title"],"message":"\n"+result["content"]+"\n\n"+result["content1"]})
     
