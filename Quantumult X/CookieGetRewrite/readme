@@ -14,15 +14,5 @@ Safari浏览器打开登录 https://bean.m.jd.com/bean/signIndex.action ,点击�
 # 获取爱奇艺Cookie(by NobyDA)
 # 打开爱奇艺App后(AppStore中国区)，点击"我的", 通知成功获取cookie.
 
-# 获取网易云音乐Cookie(by chavyleung)
-# 先登录: https://music.163.com/m/login
-# 再访问: https://music.163.com/#/user/level
-# 提示: 获取会话: 成功!
-
-# 获取Bilibili Cookie(by chavyleung)
-# 先在浏览器登录 (先登录! 先登录! 先登录!)
-# 打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com
-# 提示: 获取Cookie: 成功
-
 # 获取Luka APP Cookie(blackmatrix7收集
 # 一个宝宝听故事用的APP
