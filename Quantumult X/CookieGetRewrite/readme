@@ -3,14 +3,27 @@ cookie获取远程重写集合
 编辑配置文件，在[rewrite_remote]下粘贴以下代码：
 
 # cookie获取远程重写集合
-https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/rewrite/cookie_get.conf, tag=cookie获取远程重写集合, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/CookieGetRewrite/cookie_get.conf, tag=cookie获取远程重写集合, update-interval=86400, opt-parser=false, enabled=true
 
 包含：
 
-京东多合一签到cookie获取
+# 获取京东Cookie(by NobyDA)
+Safari浏览器打开登录 https://bean.m.jd.com/bean/signIndex.action ,点击签到并且出现签到日历后, 通知获得cookie成功.
+使用此脚本获取"账号1"Cookie成功后, 请勿点击退出账号(可能会导致Cookie失效), 需清除浏览器资料或更换浏览器登录"账号2"获取即可.
 
-爱奇艺签到cookie获取
 
-网易云音乐双签cookie获取
+# 获取爱奇艺Cookie(by NobyDA)
+# 打开爱奇艺App后(AppStore中国区)，点击"我的", 通知成功获取cookie.
 
-Bilibili直播签到cookie获取
+# 获取网易云音乐Cookie(by chavyleung)
+# 先登录: https://music.163.com/m/login
+# 再访问: https://music.163.com/#/user/level
+# 提示: 获取会话: 成功!
+
+# 获取Bilibili Cookie(by chavyleung)
+# 先在浏览器登录 (先登录! 先登录! 先登录!)
+# 打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com
+# 提示: 获取Cookie: 成功
+
+# 获取Luka APP Cookie(blackmatrix7收集
+# 一个宝宝听故事用的APP
