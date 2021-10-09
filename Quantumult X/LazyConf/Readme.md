@@ -1,6 +1,6 @@
 ## 一、EDC-LzayConf 配置说明
 ### a. 公益节点
-友情提供1条 [DediPath 年付6美刀 ](https://i.tgaro.top/dp6)美国 Trojan 服务器节点，下载导入配置文件后请勿长时间占用公益节点！
+友情提供1条 [DediPath 年付6美刀 ](https://i.tgaro.top/dp6)美国 Trojan 服务器节点，下载导入配置文件后请勿长时间占用公益节点！  
 建议将该公益节点作为临时通道，尽快导入并更新您自有的 Airport 订阅链接!
 
 **更多Airport、合租、VPS推荐可以去我的另一个站看看**  
