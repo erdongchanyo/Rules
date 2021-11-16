@@ -36,8 +36,8 @@
   > 获取京东Cookie(By NobyDA)  
   > 获取爱奇艺Cookie(By NobyDA)  
   > 获取Luka APP Cookie(blackmatrix7收集) - 一个宝宝听故事的APP  
-- AdvertisingLite(blackmatrix7收集)
-  > 复写去广告(严格版)，不直接抽取数据源中MITM的hostname，仅用正则推导的方式，推导对应hostname，无法推导出MITM的规则会被直接丢弃，推荐使用。
+- Advertising(blackmatrix7收集)
+  > 复写去广告
 - AdvertisingScript(blackmatrix7收集)
   > 整合知乎、BiliBili、什么值得买三个APP去广告，及脚本去除开屏广告复写
 - TikTok Unlock(blackmatrix7收集)
