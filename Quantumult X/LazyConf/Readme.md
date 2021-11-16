@@ -51,11 +51,9 @@
 - Luca每日签到
 
 ### AppStore 版本配置文件下载链接
+> 增加新task类型  event-interaction，可用于更多的节点信息查；包含GeoIP查询、Netflix解锁查询、Youtube Premuim支持查询、Disney+解锁查询
 https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/LazyConf/QuantumultX_EDC-Lazy.conf
-### Testflight版本配置文件下载链接
-> TF 版本增加新task类型  event-interaction，可用于更多的节点信息查；包含GeoIP查询、Netflix解锁查询、Youtube Premuim支持查询
 
-https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/LazyConf/QuantumultX_EDC-LazyTF.conf
 ## 二、EDC Quantumult X图标Gallery
 使用方法：Quantumult X主页面 > 长按 节点/策略 > 图标 > 点击右上角“+”，输入json链接
 
