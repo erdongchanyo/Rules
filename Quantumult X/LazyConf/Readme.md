@@ -31,7 +31,6 @@
   > 彩云天气SVIP解锁(By Tartarus、需开启QuanX资源解析器)  
   > Testflight下载修正  
   > Spotify Premuim解锁(By app2smile)  
-  > Youtube去片头广告
 - EDC-CookieGetRewrite
   > 获取京东Cookie(By NobyDA)  
   > 获取爱奇艺Cookie(By NobyDA)  
