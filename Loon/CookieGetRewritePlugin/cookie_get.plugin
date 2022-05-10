@@ -18,7 +18,7 @@ http-request ^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functi
 # 获取Cookie(by NobyDA)
 # Safari浏览器打开 https://m.iqiyi.com/user.html 使用密码登录, 如通知成功获取cookie则可使用该脚本.
 # 获取Cookie后, 请将Cookie脚本禁用并移除主机名，以免产生不必要的MITM.
-http-request ^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+http-request ^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 # 获取Luka APP Cookie
 http-request ^https?:\/\/luka\-graphql\.ling\.cn\/graphql\/mobile\?operation=UserInfoWithPendingRobotQuery requires-body=true, script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/luka/luka_signin.js,tag=获取Luka-cookie
