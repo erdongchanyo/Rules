@@ -1,6 +1,8 @@
 #!name=EDC-COOKIEGET
 #!desc=京东｜爱奇艺｜Luka
 #!openUrl=https://t.me/erdongchan
+#!author=ErdongChan收集整理
+#!homepage=https://erdongchan.cn
 #!icon=https://raw.githubusercontent.com/erdongchanyo/icon/main/EDC.png
 
 [MITM]
