@@ -1,3 +1,9 @@
+#!name=EDC-AllinOneRewrite
+#!desc=耳东橙多合一远程插件
+#!desc=彩云天气VIP/Tsetflight下载修正/SpotifyPremuim
+#!openUrl=https://t.me/erdongchan
+#!icon=https://raw.githubusercontent.com/erdongchanyo/icon/main/Airport/EDC.png
+
 [MITM]
 hostname = biz.caiyunapp.com, testflight.apple.com, spclient.wg.spotify.com
 
