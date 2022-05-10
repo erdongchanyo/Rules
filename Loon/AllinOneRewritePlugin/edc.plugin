@@ -1,5 +1,7 @@
+[MITM]
 hostname = biz.caiyunapp.com, testflight.apple.com, spclient.wg.spotify.com
 
+[Script]
 # 彩云天气SVIP解锁(By Tartarus
 http-response https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/CaiYun.js,requires-body=1, tag=彩云天气SVIP(By Tartarus
 
