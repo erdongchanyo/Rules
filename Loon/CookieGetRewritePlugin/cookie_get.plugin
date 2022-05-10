@@ -1,6 +1,14 @@
+#!name=EDC-CookiGet
+#!desc=京东Cookie｜
+#!openUrl=https://t.me/erdongchan
+#!icon=https://raw.githubusercontent.com/erdongchanyo/icon/main/EDC.png
+
 [MITM]
 hostname = api.m.jd.com
 
 [Script]
 # 获取京东Cookie(by NobyDA)
+# Safari浏览器打开登录 https://home.m.jd.com/myJd/newhome.action 点击"我的"页面，通知获得cookie成功
+# 或使用Safari浏览器打开登录 https://bean.m.jd.com/bean/signIndex.action ,点击签到并且出现签到日历后, 通知获得cookie成功.
+# 使用此脚本获取"账号1"Cookie成功后, 请勿点击退出账号(可能会导致Cookie失效), 需清除浏览器资料或更换浏览器登录"账号2"获取即可.
 http-request ^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?) tag=获取京东Cookie, requires-body=true, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
