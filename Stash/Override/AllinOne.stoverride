@@ -9,7 +9,6 @@ http:
       name: SpotifyPremuim
       type: response
       require-body: true
-      binary-body-mode: true
       timeout: 10
 
 script-providers:
