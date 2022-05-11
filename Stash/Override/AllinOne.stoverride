@@ -4,7 +4,7 @@ desc: 彩云天气VIP｜TF下载修正｜Spotify会员｜B站去广告｜知乎�
 http:
   mitm:
     #彩云天气APP
-    - “biz.caiyunapp.com”
+    - "biz.caiyunapp.com"
     #BiliBili
     #--------
     - "app.bilibili.com"
