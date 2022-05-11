@@ -3,11 +3,18 @@ desc: 彩云天气VIP｜TF下载修正｜Spotify会员｜B站去广告｜知乎�
 
 http:
   mitm:
+    #彩云天气APP
+    - “biz.caiyunapp.com”
+    #BiliBili
+    #--------
     - "app.bilibili.com"
     - "api.bilibili.com"
     - "api.live.bilibili.com"
     - "api.vc.bilibili.com"
+    #--------
   rewrite:
+    #BiliBili
+    #--------
     # 去除搜索中的大家都在搜
     - ^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject
     # 去除动态中的话题
@@ -19,7 +26,18 @@ http:
     # BiliBili漫画去广告
     - ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash - reject
     - ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash - reject
+    #--------
   script:
+    #彩云天气APP
+    #--------
+    - match: https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user)
+      name: caiyun
+      type: response
+      require-body: true
+      timeout: 10
+    #--------
+    #BiliBili
+    #--------
     #BiliBili_推荐去广告
     - match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index
       name: bilibili_plus
@@ -62,10 +80,14 @@ http:
       type: response
       require-body: true
       timeout: 10
+      #--------
 
 script-providers:
   bilibili_plus:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+    interval: 86400
+  caiyun:
+    url: https://raw.githubusercontent.com/Tartarus2014/Script/master/CaiYun.js
     interval: 86400
 
 rules:
