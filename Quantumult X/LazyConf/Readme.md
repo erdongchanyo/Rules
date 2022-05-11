@@ -100,7 +100,7 @@
   
 
 > **Sub-Store**
-> - 高级订阅管理工具
+> - 高级订阅管理工具，访问：https://sub-store.vercel.app
 > - Quantumult X 配置在「rewrite_local」模块
 
 ### c.脚本任务
