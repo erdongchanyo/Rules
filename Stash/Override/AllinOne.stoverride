@@ -6,11 +6,11 @@ http:
     - spclient.wg.spotify.com
   script:
     - match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
-      name: Spotify Premuim解锁
+      name: SpotifyPremuim
       type: request
       require-body: true
       timeout: 120
 script-providers:
-  Spotify Premuim:
+  SpotifyPremuim:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
     interval: 86400
