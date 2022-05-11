@@ -1,0 +1,16 @@
+name: EDC-ALLinONE
+desc: 彩云天气VIP｜TF下载修正｜Spotify会员｜B站去广告｜知乎去广告+优化
+
+http:
+  mitm:
+    - spclient.wg.spotify.com
+  script:
+    - match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
+      name: Spotify Premuim解锁
+      type: request
+      require-body: true
+      timeout: 120
+script-providers:
+  Spotify Premuim:
+    https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+    interval: 86400
