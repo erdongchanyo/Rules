@@ -3,13 +3,13 @@ desc: 彩云天气VIP｜TF下载修正｜Spotify会员｜B站去广告｜知乎�
 
 http:
   mitm:
-    - spclient.wg.spotify.com
+    - "spclient.wg.spotify.com"
   script:
     - match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
       name: SpotifyPremuim
-      type: request
+      type: response
       require-body: true
-      timeout: 120
+      timeout: 10
 script-providers:
   SpotifyPremuim:
     url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
