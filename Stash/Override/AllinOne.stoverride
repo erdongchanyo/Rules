@@ -12,5 +12,5 @@ http:
       timeout: 120
 script-providers:
   Spotify Premuim:
-    https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+    url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
     interval: 86400
