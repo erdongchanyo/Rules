@@ -1,5 +1,5 @@
 name: EDC-ALLinONE
-desc: ErdongChan收集整理：彩云天气VIP｜TF下载修正｜Spotify会员｜B站去广告｜知乎去广告+优化
+desc: ErdongChan收集整理：彩云天气VIP｜TF下载修正｜B站去广告｜知乎去广告+优化
 
 http:
   mitm:
@@ -8,9 +8,6 @@ http:
     # --------
     # TF下载修正
     - "testflight.apple.com"
-    # --------
-    # Spotify会员
-    - "spclient.wg.spotify.com"
     # --------
     # BiliBili去广告
     - "app.bilibili.com"
@@ -64,13 +61,6 @@ http:
     - match: ^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$
       name: tf
       type: request
-      require-body: true
-      timeout: 10
-    # --------
-    # Spotify会员
-    - match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$
-      name: spotify
-      type: response
       require-body: true
       timeout: 10
     # --------
@@ -201,10 +191,6 @@ script-providers:
   # TF下载修正
   tf:
     url: https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js
-    interval: 86400
-  # Spotify会员
-  spotify:
-    url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
     interval: 86400
   # BiliBili去广告
   bilibili_plus:
