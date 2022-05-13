@@ -5,6 +5,9 @@
 # Telegram：https://t.me/erdongchan
 # 图标库：https://github.com/erdongchanyo/icon
 # ------------------
+# 下载配置后，需要自行添加机场订阅链接
+# 找到 #远程订阅(代理集合) 部分，将 MyProxy 部分的 url 链接地址更换为自己的机场订阅链接
+# 此处推荐使用Sub-Store订阅链接，多机场用户可以将多个机场订阅整合为一个 Sub-Store 订阅
 
 mixed-port: 7890
 allow-lan: true
