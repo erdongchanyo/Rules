@@ -26,7 +26,7 @@ if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 	  `--------------\n`+
 	  `已持续运行: ${startTime}\n`+
 	  `--------------\n`+
-	  `MitM:`+icon_status(mitm_status.enabled)+`  Rewrite:`+icon_status(rewrite_status.enabled)+`  Scripting:`+icon_status(scripting_status.enabled),
+	  `MitM:`+icon_status(mitm_status.enabled)+`｜Rewrite:`+icon_status(rewrite_status.enabled)+`｜Scripting:`+icon_status(scripting_status.enabled),
 		icon: params.icon,
 		"icon-color":params.color
     });
