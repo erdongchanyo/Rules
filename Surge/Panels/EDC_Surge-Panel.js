@@ -20,13 +20,13 @@ if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 
   $done({
       title:"𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢",
-      content:`©️𝗘𝗿𝗱𝗼𝗻𝗴𝗖𝗵𝗮𝗻 𝗟𝗮𝘇𝘆 𝗖𝗢𝗡𝗙\n`+
+      content:`𝗘𝗿𝗱𝗼𝗻𝗴𝗖𝗵𝗮𝗻 𝗟𝗮𝘇𝘆 𝗖𝗢𝗡𝗙©️\n`+
 	  `--------------\n`+
-	  `@𝘁.𝗺𝗲/𝗲𝗿𝗱𝗼𝗻𝗴𝗰𝗵𝗮𝗻\n`+
+	  `@t.me/erdongchan\n`+
 	  `--------------\n`+
-	  `𝗦𝘂𝗿𝗴𝗲启动时长: ${startTime}\n`+
+	  `SURGE启动时长: ${startTime}\n`+
 	  `--------------\n`+
-	  `𝗠𝗶𝘁𝗠:`+icon_status(mitm_status.enabled)+`  𝗥𝗲𝘄𝗿𝗶𝘁𝗲:`+icon_status(rewrite_status.enabled)+`  𝗦𝗰𝗿𝗶𝗽𝘁𝗶𝗻𝗴:`+icon_status(scripting_status.enabled),
+	  `MitM:`+icon_status(mitm_status.enabled)+`  Rewrite:`+icon_status(rewrite_status.enabled)+`  Scripting:`+icon_status(scripting_status.enabled),
 		icon: params.icon,
 		"icon-color":params.color
     });
