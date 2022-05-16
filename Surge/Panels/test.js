@@ -1,25 +1,54 @@
+
+/* 参考 */
+/* https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/surgepro_reloadprofile.js */
+/* https://raw.githubusercontent.com/smartmimi/conf/master/surge/functionstatus.js */
+
 const REQUEST_HEADERS = {
   'User-Agent':
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36',
   'Accept-Language': 'en',
 }
 
-;(async () => {
-  let panel_result = {
-    title: '𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢',
-    content: '',
-    icon: 'play.circle',
-    'icon-color': '#00BC12',
+!(async () => {
+/* 定义图标 */
+let params = getParams($argument)
+/* 运行时间获取 */
+let traffic = (await httpAPI("/v1/traffic","GET"))
+let dateNow = new Date()
+let dateTime = Math.floor(traffic.startTime*1000)
+let startTime = timeTransform(dateNow,dateTime)
+/* MitM+Rewrite+Scripting状态获取 */
+let mitm_status = (await httpAPI("/v1/features/mitm","GET"));
+let rewrite_status = (await httpAPI("/v1/features/rewrite","GET"));
+let scripting_status = (await httpAPI("/v1/features/scripting","GET"));
+/* 流媒体检测 */
+let meiti = {
+    yt_content: '',
   }
-  await Promise.all([check_netflix(), check_youtube_premium()])
+  await Promise.all(check_youtube_premium())
     .then((result) => {
-      let content = result.join('   ')
-      panel_result['content'] = content
+      let yt_content = result.join('   ')
+      meiti['yt_content'] = yt_content
     })
-    .finally(() => {
-      $done(panel_result)
-    })
-})()
+
+if ($trigger == "button") await httpAPI("/v1/profiles/reload");
+
+  $done({
+      title:"𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢",
+      content:`𝗘𝗿𝗱𝗼𝗻𝗴𝗖𝗵𝗮𝗻 𝗟𝗮𝘇𝘆 𝗖𝗢𝗡𝗙©️\n`+
+	  `--------------\n`+
+	  `@t.me/erdongchan\n`+
+	  `--------------\n`+
+	  `已持续运行: ${startTime}\n`+
+	  `--------------\n`+
+    `(meiti)\n`+
+    `--------------\n`+
+	  `MitM:`+icon_status(mitm_status.enabled)+`  Rewrite:`+icon_status(rewrite_status.enabled)+`  Scripting:`+icon_status(scripting_status.enabled),
+		icon: params.icon,
+		"icon-color":params.color
+    });
+
+})();
 
 async function check_youtube_premium() {
   let inner_check = () => {
@@ -71,73 +100,53 @@ async function check_youtube_premium() {
   return youtube_check_result
 }
 
-async function check_netflix() {
-  let inner_check = (filmId) => {
-    return new Promise((resolve, reject) => {
-      let option = {
-        url: 'https://www.netflix.com/title/' + filmId,
-        headers: REQUEST_HEADERS,
-      }
-      $httpClient.get(option, function (error, response, data) {
-        if (error != null) {
-          reject('Error')
-          return
-        }
 
-        if (response.status === 403) {
-          reject('Not Available')
-          return
-        }
+function timeTransform(dateNow,dateTime) {
+let dateDiff = dateNow - dateTime;
+let days = Math.floor(dateDiff / (24 * 3600 * 1000));//计算出相差天数
+let leave1=dateDiff%(24*3600*1000)    //计算天数后剩余的毫秒数
+let hours=Math.floor(leave1/(3600*1000))//计算出小时数
+//计算相差分钟数
+let leave2=leave1%(3600*1000)    //计算小时数后剩余的毫秒数
+let minutes=Math.floor(leave2/(60*1000))//计算相差分钟数
+//计算相差秒数
+let leave3=leave2%(60*1000)      //计算分钟数后剩余的毫秒数
+let seconds=Math.round(leave3/1000)
 
-        if (response.status === 404) {
-          resolve('Not Found')
-          return
-        }
+if(days==0){
 
-        if (response.status === 200) {
-          let url = response.headers['x-originating-url']
-          let region = url.split('/')[3]
-          region = region.split('-')[0]
-          if (region == 'title') {
-            region = 'us'
-          }
-          resolve(region)
-          return
-        }
+	if(hours==0){
+	if(minutes==0)return(`${seconds}秒`);
+	return(`${minutes}分${seconds}秒`)
+	}
+	return(`${hours}时${minutes}分${seconds}秒`)
+	}else {
+	return(`${days}天${hours}时${minutes}分`)
+	}
 
-        reject('Error')
-      })
-    })
-  }
+}
 
-  let netflix_check_result = ''
+function icon_status(status){
+  if (status){
+    return "\u2611";
+  } else {
+      return "\u2612"
+    }
+}
 
-  await inner_check(81215567)
-    .then((code) => {
-      if (code === 'Not Found') {
-        return inner_check(80018499)
-      }
-      netflix_check_result += '奈飞解锁：' + code.toUpperCase()
-      return Promise.reject('BreakSignal')
-    })
-    .then((code) => {
-      if (code === 'Not Found') {
-        return Promise.reject('Not Available')
-      }
+function httpAPI(path = "", method = "POST", body = null) {
+    return new Promise((resolve) => {
+        $httpAPI(method, path, body, (result) => {
+            resolve(result);
+        });
+    });
+}
 
-      netflix_check_result += '奈飞自制 ➟ ' + code.toUpperCase()
-      return Promise.reject('BreakSignal')
-    })
-    .catch((error) => {
-      if (error === 'BreakSignal') {
-        return
-      }
-      if (error === 'Not Available') {
-        netflix_check_result += '奈飞无法观看'
-        return
-      }
-      netflix_check_result += '检测失败'
-    })
-
-  return netflix_check_result
+function getParams(param) {
+  return Object.fromEntries(
+    $argument
+      .split("&")
+      .map((item) => item.split("="))
+      .map(([k, v]) => [k, decodeURIComponent(v)])
+  );
 }
