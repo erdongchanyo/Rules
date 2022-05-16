@@ -6,20 +6,21 @@ const REQUEST_HEADERS = {
 
 ;(async () => {
   let panel_result = {
-    title: '𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢',
-    content: '',
-    icon: 'play.circle',
-    'icon-color': '#00BC12',
+    contentabc: '',
   }
   await Promise.all([check_netflix(), check_youtube_premium()])
     .then((result) => {
-      let content = result.join('   ')
-      panel_result['content'] = content
+      let contentabc = result.join('   ')
+      panel_result['contentabc'] = contentabc
     })
     .finally(() => {
-      $done(panel_result)
-	  content:`𝗘𝗿𝗱𝗼𝗻𝗴𝗖𝗵𝗮𝗻 𝗟𝗮𝘇𝘆 𝗖𝗢𝗡𝗙©️\n`+
-	  `--------------`,
+      $done({
+	  title:"𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢",
+          content:`𝗘𝗿𝗱𝗼𝗻𝗴𝗖𝗵𝗮𝗻 𝗟𝗮𝘇𝘆 𝗖𝗢𝗡𝗙©️\n`+
+	      `--------------\n`+
+	      (panel_result),
+		    icon: 'play.circle',
+    		    'icon-color': '#00BC12',
     })
 })()
 
