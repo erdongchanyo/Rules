@@ -11,7 +11,8 @@ if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 
   $done({
       title:"𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢 𝗘𝗗𝗖_𝗟𝗔𝗭𝗬-𝗖𝗢𝗡𝗙",
-      content:`启动时长: ${startTime}`,
+      content:`测试` +
+	`启动时长: ${startTime}`,
 		icon: params.icon,
 		"icon-color":params.color
     });
