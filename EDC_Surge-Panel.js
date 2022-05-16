@@ -1,40 +1,37 @@
-let params = getParams($argument)
+
+/* 参考 */
+/* https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/surgepro_reloadprofile.js */
+/* https://raw.githubusercontent.com/smartmimi/conf/master/surge/functionstatus.js */
 
 !(async () => {
+/* 定义图标 */
+let params = getParams($argument)
 /* 时间获取 */
 let traffic = (await httpAPI("/v1/traffic","GET"))
 let dateNow = new Date()
 let dateTime = Math.floor(traffic.startTime*1000)
 let startTime = timeTransform(dateNow,dateTime)
+/* MitM+Rewrite+Scripting状态获取 */
 let mitm_status = (await httpAPI("/v1/features/mitm","GET"));
 let rewrite_status = (await httpAPI("/v1/features/rewrite","GET"));
 let scripting_status = (await httpAPI("/v1/features/scripting","GET"));
-let icon_s = mitm_status.enabled&&rewrite_status.enabled&&scripting_status.enabled;
 
 if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 
   $done({
       title:"𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢",
-      content:`𝗘𝗿𝗱𝗼𝗻𝗴𝗖𝗵𝗮𝗻 𝗟𝗮𝘇𝘆 𝗖𝗢𝗡𝗙\n`+
+      content:`©️𝗘𝗿𝗱𝗼𝗻𝗴𝗖𝗵𝗮𝗻 𝗟𝗮𝘇𝘆 𝗖𝗢𝗡𝗙\n`+
 	  `--------------\n`+
-	  `@t.me/erdongchan\n`+
+	  `@𝘁.𝗺𝗲/𝗲𝗿𝗱𝗼𝗻𝗴𝗰𝗵𝗮𝗻\n`+
 	  `--------------\n`+
-	  `Surge启动时长: ${startTime}\n`+
+	  `𝗦𝘂𝗿𝗴𝗲启动时长: ${startTime}\n`+
 	  `--------------\n`+
-	  `Mitm:`+icon_status(mitm_status.enabled)+`  Rewrite:`+icon_status(rewrite_status.enabled)+`  Scripting:`+icon_status(scripting_status.enabled),
+	  `𝗠𝗶𝘁𝗠:`+icon_status(mitm_status.enabled)+`  𝗥𝗲𝘄𝗿𝗶𝘁𝗲:`+icon_status(rewrite_status.enabled)+`  𝗦𝗰𝗿𝗶𝗽𝘁𝗶𝗻𝗴:`+icon_status(scripting_status.enabled),
 		icon: params.icon,
 		"icon-color":params.color
     });
 
 })();
-
-function icon_status(status){
-  if (status){
-    return "\u2611";
-  } else {
-      return "\u2612"
-    }
-}
 
 function timeTransform(dateNow,dateTime) {
 let dateDiff = dateNow - dateTime;
@@ -61,6 +58,13 @@ if(days==0){
 
 }
 
+function icon_status(status){
+  if (status){
+    return "\u2611";
+  } else {
+      return "\u2612"
+    }
+}
 
 function httpAPI(path = "", method = "POST", body = null) {
     return new Promise((resolve) => {
