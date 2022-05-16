@@ -26,10 +26,12 @@ if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 	  `--------------\n`+
 	  `已持续运行: ${startTime}\n`+
 	  `--------------\n`+
-	  `MitM:`+icon_status(mitm_status.enabled)+`｜Rewrite:`+icon_status(rewrite_status.enabled)+`｜Scripting:`+icon_status(scripting_status.enabled),
+	  `MitM:`+icon_status(mitm_status.enabled)+`  Rewrite:`+icon_status(rewrite_status.enabled)+`  Scripting:`+icon_status(scripting_status.enabled),
 		icon: params.icon,
 		"icon-color":params.color
     });
+
+})();
 
 function timeTransform(dateNow,dateTime) {
 let dateDiff = dateNow - dateTime;
@@ -44,6 +46,7 @@ let leave3=leave2%(60*1000)      //计算分钟数后剩余的毫秒数
 let seconds=Math.round(leave3/1000)
 
 if(days==0){
+
 	if(hours==0){
 	if(minutes==0)return(`${seconds}秒`);
 	return(`${minutes}分${seconds}秒`)
@@ -52,6 +55,7 @@ if(days==0){
 	}else {
 	return(`${days}天${hours}时${minutes}分`)
 	}
+
 }
 
 function icon_status(status){
