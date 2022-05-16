@@ -6,15 +6,15 @@ let traffic = (await httpAPI("/v1/traffic","GET"))
 let dateNow = new Date()
 let dateTime = Math.floor(traffic.startTime*1000)
 let startTime = timeTransform(dateNow,dateTime)
-let xhr = new XMLHttpRequest()
 
 if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 
   $done({
       title:"𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢 𝗘𝗗𝗖_𝗟𝗔𝗭𝗬-𝗖𝗢𝗡𝗙",
       content:`欢迎使用ErdongChan懒人配置\n`+
-	  `xhr. open(‘GET,‘https://t.me/erdongchan',true)；
-	  xhr. send();\n\n`+
+	  `--------------\n`+
+	  `@t.me/erdongchan\n`+
+	  `--------------\n`+
 	  `Surge启动时长: ${startTime}`,
 		icon: params.icon,
 		"icon-color":params.color
