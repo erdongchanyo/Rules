@@ -11,8 +11,9 @@ if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 
   $done({
       title:"𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢 𝗘𝗗𝗖_𝗟𝗔𝗭𝗬-𝗖𝗢𝗡𝗙",
-      content:`流量\n`+
-      `启动时长: ${startTime}`,
+      content:`欢迎使用ErdongChan懒人配置\n`+
+	  `TG: https://t.me/erdongchan\n`+
+	  `Surge启动时长: ${startTime}`,
 		icon: params.icon,
 		"icon-color":params.color
     });
