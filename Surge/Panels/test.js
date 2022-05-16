@@ -21,13 +21,7 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
   ;(async () => {
     let panel_result = {
       title: '𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢',
-      content: `𝗘𝗿𝗱𝗼𝗻𝗴𝗖𝗵𝗮𝗻 𝗟𝗮𝘇𝘆 𝗖𝗢𝗡𝗙©️\n`+
-	  `--------------\n`+
-	  `@t.me/erdongchan\n`+
-	  `--------------\n`+
-	  `已持续运行: ${startTime}\n`+
-	  `--------------\n`+
-	  '',
+      content: '',
       icon: 'play.tv.fill',
       'icon-color': '#FF2D55',
     }
