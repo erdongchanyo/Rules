@@ -1,3 +1,5 @@
+let params = getParams($argument)
+
 const REQUEST_HEADERS = {
     'User-Agent':
       'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36',
@@ -20,10 +22,10 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 
 ;(async () => {
 let panel_result = {
-	title: '流媒体解锁检测',
+	title: '𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢',
 	content: '',
-	icon: 'play.tv.fill',
-	'icon-color': '#FF2D55',
+	icon: params.icon,
+	'icon-color': params.color,
 	}
 let [{ region, status }] = await Promise.all([testDisneyPlus()])
 	await Promise.all([check_youtube_premium(),check_netflix()])
