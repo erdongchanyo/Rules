@@ -19,12 +19,11 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 
 
   ;(async () => {
-    let params = getParams($argument)
     let panel_result = {
       title: '𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢',
       content: '',
-      icon: params.icon,
-      "icon-color":params.color,
+      icon: 'play.tv.fill',
+      'icon-color': '#FF2D55',
     }
   let [{ region, status }] = await Promise.all([testDisneyPlus()])
     await Promise.all([check_youtube_premium(),check_netflix()])
@@ -53,9 +52,7 @@ console.log(result)
 panel_result['content'] = content
       })
       .finally(() => {
-        $done({
-            title:"𝗦𝗨𝗥𝗚𝗘 𝗣𝗥𝗢",
-        });
+        $done(panel_result)
       })
   })()
   async function check_youtube_premium() {
