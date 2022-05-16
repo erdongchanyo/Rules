@@ -14,7 +14,7 @@ const REQUEST_HEADERS = {
   await Promise.all([check_netflix(), check_youtube_premium()])
     .then((result) => {
       let content = `𝗘𝗿𝗱𝗼𝗻𝗴𝗖𝗵𝗮𝗻 𝗟𝗮𝘇𝘆 𝗖𝗢𝗡𝗙©️\n`+
-          `result.join('   ')\n`,
+          `result.join('   ')`,
       panel_result['content'] = content
     })
     .finally(() => {
