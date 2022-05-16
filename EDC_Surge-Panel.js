@@ -6,6 +6,10 @@ let traffic = (await httpAPI("/v1/traffic","GET"))
 let dateNow = new Date()
 let dateTime = Math.floor(traffic.startTime*1000)
 let startTime = timeTransform(dateNow,dateTime)
+let mitm_status = (await httpAPI("/v1/features/mitm","GET"));
+let rewrite_status = (await httpAPI("/v1/features/rewrite","GET"));
+let scripting_status = (await httpAPI("/v1/features/scripting","GET"));
+let icon_s = mitm_status.enabled&&rewrite_status.enabled&&scripting_status.enabled;
 
 if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 
@@ -15,12 +19,22 @@ if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 	  `--------------\n`+
 	  `@t.me/erdongchan\n`+
 	  `--------------\n`+
-	  `Surge启动时长: ${startTime}`,
+	  `Surge启动时长: ${startTime}`
+	  `--------------\n`+
+	  `"Mitm:"+icon_status(mitm_status.enabled)+"  Rewrite:"+icon_status(rewrite_status.enabled)+"  Scripting:"+icon_status(scripting_status.enabled)\n`,
 		icon: params.icon,
 		"icon-color":params.color
     });
 
 })();
+
+function icon_status(status){
+  if (status){
+    return "\u2611";
+  } else {
+      return "\u2612"
+    }
+}
 
 function timeTransform(dateNow,dateTime) {
 let dateDiff = dateNow - dateTime;
