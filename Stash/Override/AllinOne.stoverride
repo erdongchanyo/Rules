@@ -3,10 +3,6 @@ desc: ErdongChan收集整理：彩云天气VIP｜TF下载修正｜B站去广告�
 
 http:
   mitm:
-    # Youtube 去贴片广告 
-    - "*.googlevideo.com"
-    - "youtubei.googleapis.com"
-    # --------
     # 彩云天气VIP
     - "biz.caiyunapp.com"
     # --------
@@ -54,13 +50,6 @@ http:
     # --------
   
   script:
-    # Youtube 去贴片广告
-    - match: https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide)
-      name: youtube
-      type: response
-      require-body: true
-      timeout: 10
-    # --------
     # 彩云天气VIP
     - match: https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user)
       name: caiyun
@@ -195,10 +184,6 @@ http:
     # --------
 
 script-providers:
-  # Youtube 去贴片广告
-  youtube:
-    url: https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.js
-    interval: 86400
   # 彩云天气VIP
   caiyun:
     url: https://raw.githubusercontent.com/Tartarus2014/Script/master/CaiYun.js
