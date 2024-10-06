@@ -5,3 +5,6 @@
 #!homepage=https://store.erdongchan.cn/
 #!icon=https://img.erdongchan.cn/2024/08/13/440b190913d95.jpg
 #!tag=EDCstore
+
+[Rule]
+DOMAIN-SUFFIX, erdongchan.cn, Final
